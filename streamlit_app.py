@@ -14,7 +14,7 @@ def main():
     st.markdown("- Unsupervised Learning: Models find patterns in unlabeled data.")
     st.markdown("- Reinforcement Learning: Agents learn by interacting with an environment and receiving feedback.")
 
-    st.beta_expander("Supervised Learning in Detail"):
+    with st.expander("Supervised Learning in Detail"):
         st.write("Supervised Learning involves training a model on a labeled dataset, where each example is paired with a "
                  "correct label. The model makes predictions on new, unseen data.")
 
@@ -23,7 +23,7 @@ def main():
         st.markdown("- Decision Trees")
         st.markdown("- Support Vector Machines")
 
-    st.beta_expander("Unsupervised Learning in Detail"):
+    with st.expander("Unsupervised Learning in Detail"):
         st.write("Unsupervised Learning deals with finding patterns and relationships in data without labeled outcomes. "
                  "Clustering and dimensionality reduction are common tasks.")
 
@@ -32,7 +32,7 @@ def main():
         st.markdown("- Principal Component Analysis (PCA)")
         st.markdown("- Autoencoders")
 
-    st.beta_expander("Reinforcement Learning in Detail"):
+    with st.expander("Reinforcement Learning in Detail"):
         st.write("Reinforcement Learning involves an agent learning to make decisions by interacting with an environment. "
                  "The agent receives feedback in the form of rewards or penalties.")
 
@@ -65,4 +65,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
