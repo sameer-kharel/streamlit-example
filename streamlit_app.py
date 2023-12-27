@@ -1,67 +1,100 @@
 import streamlit as st
 
 def main():
-    st.title("Machine Learning and Artificial Intelligence")
+    st.title("Demystifying Machine Learning and Artificial Intelligence")
 
-    st.write("Welcome to the interactive blog post about Machine Learning and Artificial Intelligence!")
+    st.write("Welcome to an in-depth exploration of Machine Learning (ML) and Artificial Intelligence (AI)! "
+             "Let's unravel the mysteries behind these transformative technologies.")
 
-    st.header("Machine Learning (ML)")
-    st.write("Machine Learning is a subset of Artificial Intelligence that focuses on developing algorithms and models "
-             "that enable computers to learn from data and make predictions or decisions without being explicitly programmed.")
+    # Styling
+    st.markdown(
+        """
+        <style>
+            body {
+                background-color: #f8f9fa;
+                color: #333;
+                font-family: 'Arial', sans-serif;
+            }
+            .content {
+                max-width: 800px;
+                margin: auto;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+            }
+            h1, h2, h3 {
+                color: #007bff;
+            }
+            .section {
+                margin-top: 20px;
+            }
+            .sub-section {
+                margin-top: 10px;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
-    st.subheader("Common ML Techniques:")
-    st.markdown("- Supervised Learning: Models learn from labeled training data.")
-    st.markdown("- Unsupervised Learning: Models find patterns in unlabeled data.")
-    st.markdown("- Reinforcement Learning: Agents learn by interacting with an environment and receiving feedback.")
+    with st.beta_container():
+        st.header("Understanding Machine Learning (ML)")
 
-    with st.expander("Supervised Learning in Detail"):
-        st.write("Supervised Learning involves training a model on a labeled dataset, where each example is paired with a "
-                 "correct label. The model makes predictions on new, unseen data.")
+        st.markdown(
+            "Machine Learning is a subset of Artificial Intelligence that empowers computers to learn patterns and make decisions without "
+            "explicit programming. Let's delve into some common ML techniques."
+        )
 
-        st.subheader("Example Algorithms:")
+        st.subheader("1. Supervised Learning")
+        st.markdown(
+            "In supervised learning, models are trained on labeled data, where each example has an associated label. "
+            "This enables the model to make predictions on new, unseen data."
+        )
+        st.markdown("Example Algorithms:")
         st.markdown("- Linear Regression")
         st.markdown("- Decision Trees")
         st.markdown("- Support Vector Machines")
 
-    with st.expander("Unsupervised Learning in Detail"):
-        st.write("Unsupervised Learning deals with finding patterns and relationships in data without labeled outcomes. "
-                 "Clustering and dimensionality reduction are common tasks.")
-
-        st.subheader("Example Algorithms:")
+        st.subheader("2. Unsupervised Learning")
+        st.markdown(
+            "Unsupervised learning involves finding patterns in unlabeled data. Clustering and dimensionality reduction "
+            "are common tasks in this category."
+        )
+        st.markdown("Example Algorithms:")
         st.markdown("- K-Means Clustering")
         st.markdown("- Principal Component Analysis (PCA)")
         st.markdown("- Autoencoders")
 
-    with st.expander("Reinforcement Learning in Detail"):
-        st.write("Reinforcement Learning involves an agent learning to make decisions by interacting with an environment. "
-                 "The agent receives feedback in the form of rewards or penalties.")
-
-        st.subheader("Example Algorithms:")
+        st.subheader("3. Reinforcement Learning")
+        st.markdown(
+            "Reinforcement Learning focuses on agents learning to make decisions by interacting with an environment and receiving feedback in the form of rewards or penalties."
+        )
+        st.markdown("Example Algorithms:")
         st.markdown("- Q-Learning")
         st.markdown("- Deep Q Networks (DQN)")
         st.markdown("- Policy Gradient Methods")
 
-    st.header("Artificial Intelligence (AI)")
-    st.write("Artificial Intelligence is a broader concept that encompasses machines or systems that can perform tasks "
-             "that typically require human intelligence. Machine Learning is a subset of AI.")
+    with st.beta_container():
+        st.header("Artificial Intelligence (AI)")
 
-    st.subheader("AI Applications:")
-    st.markdown("- Natural Language Processing (NLP)")
-    st.markdown("- Computer Vision")
-    st.markdown("- Speech Recognition")
-    st.markdown("- Robotics")
+        st.markdown(
+            "Artificial Intelligence is a broader concept encompassing machines or systems performing tasks that typically require human intelligence. "
+            "Machine Learning is a key component of AI."
+        )
 
-    st.header("Interactive Demo")
+        st.subheader("AI Applications:")
+        st.markdown("- Natural Language Processing (NLP)")
+        st.markdown("- Computer Vision")
+        st.markdown("- Speech Recognition")
+        st.markdown("- Robotics")
 
-    st.write("Let's explore a simple interactive demo to understand your preferences and experiences in ML and AI.")
+    st.header("In Conclusion")
 
-    ml_experience = st.slider("How familiar are you with Machine Learning?", 0, 10, 5)
-    ai_experience = st.slider("How familiar are you with Artificial Intelligence?", 0, 10, 3)
-
-    st.write(f"Your Machine Learning experience level: {ml_experience}")
-    st.write(f"Your Artificial Intelligence experience level: {ai_experience}")
-
-    st.success("Thank you for exploring the interactive demo! Feel free to reach out if you have any questions.")
+    st.markdown(
+        "Machine Learning and Artificial Intelligence are driving innovations across industries. As you continue your journey into the world of AI/ML, "
+        "explore the diverse applications and contribute to the advancement of these transformative technologies."
+    )
 
 if __name__ == "__main__":
     main()
+
