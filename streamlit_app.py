@@ -37,56 +37,54 @@ def main():
         unsafe_allow_html=True
     )
 
-    with st.beta_container():
-        st.header("Understanding Machine Learning (ML)")
+    st.header("Understanding Machine Learning (ML)")
 
-        st.markdown(
-            "Machine Learning is a subset of Artificial Intelligence that empowers computers to learn patterns and make decisions without "
-            "explicit programming. Let's delve into some common ML techniques."
-        )
+    st.markdown(
+        "Machine Learning is a subset of Artificial Intelligence that empowers computers to learn patterns and make decisions without "
+        "explicit programming. Let's delve into some common ML techniques."
+    )
 
-        st.subheader("1. Supervised Learning")
-        st.markdown(
-            "In supervised learning, models are trained on labeled data, where each example has an associated label. "
-            "This enables the model to make predictions on new, unseen data."
-        )
-        st.markdown("Example Algorithms:")
-        st.markdown("- Linear Regression")
-        st.markdown("- Decision Trees")
-        st.markdown("- Support Vector Machines")
+    st.subheader("1. Supervised Learning")
+    st.markdown(
+        "In supervised learning, models are trained on labeled data, where each example has an associated label. "
+        "This enables the model to make predictions on new, unseen data."
+    )
+    st.markdown("Example Algorithms:")
+    st.markdown("- Linear Regression")
+    st.markdown("- Decision Trees")
+    st.markdown("- Support Vector Machines")
 
-        st.subheader("2. Unsupervised Learning")
-        st.markdown(
-            "Unsupervised learning involves finding patterns in unlabeled data. Clustering and dimensionality reduction "
-            "are common tasks in this category."
-        )
-        st.markdown("Example Algorithms:")
-        st.markdown("- K-Means Clustering")
-        st.markdown("- Principal Component Analysis (PCA)")
-        st.markdown("- Autoencoders")
+    st.subheader("2. Unsupervised Learning")
+    st.markdown(
+        "Unsupervised learning involves finding patterns in unlabeled data. Clustering and dimensionality reduction "
+        "are common tasks in this category."
+    )
+    st.markdown("Example Algorithms:")
+    st.markdown("- K-Means Clustering")
+    st.markdown("- Principal Component Analysis (PCA)")
+    st.markdown("- Autoencoders")
 
-        st.subheader("3. Reinforcement Learning")
-        st.markdown(
-            "Reinforcement Learning focuses on agents learning to make decisions by interacting with an environment and receiving feedback in the form of rewards or penalties."
-        )
-        st.markdown("Example Algorithms:")
-        st.markdown("- Q-Learning")
-        st.markdown("- Deep Q Networks (DQN)")
-        st.markdown("- Policy Gradient Methods")
+    st.subheader("3. Reinforcement Learning")
+    st.markdown(
+        "Reinforcement Learning focuses on agents learning to make decisions by interacting with an environment and receiving feedback in the form of rewards or penalties."
+    )
+    st.markdown("Example Algorithms:")
+    st.markdown("- Q-Learning")
+    st.markdown("- Deep Q Networks (DQN)")
+    st.markdown("- Policy Gradient Methods")
 
-    with st.beta_container():
-        st.header("Artificial Intelligence (AI)")
+    st.header("Artificial Intelligence (AI)")
 
-        st.markdown(
-            "Artificial Intelligence is a broader concept encompassing machines or systems performing tasks that typically require human intelligence. "
-            "Machine Learning is a key component of AI."
-        )
+    st.markdown(
+        "Artificial Intelligence is a broader concept encompassing machines or systems performing tasks that typically require human intelligence. "
+        "Machine Learning is a key component of AI."
+    )
 
-        st.subheader("AI Applications:")
-        st.markdown("- Natural Language Processing (NLP)")
-        st.markdown("- Computer Vision")
-        st.markdown("- Speech Recognition")
-        st.markdown("- Robotics")
+    st.subheader("AI Applications:")
+    st.markdown("- Natural Language Processing (NLP)")
+    st.markdown("- Computer Vision")
+    st.markdown("- Speech Recognition")
+    st.markdown("- Robotics")
 
     st.header("In Conclusion")
 
@@ -97,4 +95,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
